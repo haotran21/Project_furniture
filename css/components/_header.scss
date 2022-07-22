@@ -1,0 +1,107 @@
+.header {
+    height: 72px;
+    // background-color: red;
+    display: flex;
+    justify-content: space-between;
+    line-height: 72px;
+
+    //======= NAVBAR SECTION =======//
+
+    .logo {
+        width: 30%;
+
+        h1 {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+    }
+    .menu {
+        width: 30%;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                a {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .search-cart {
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        .search {
+            input {
+                border: none;
+                outline: none;
+                width: 55px;
+                height: 40px;
+                padding-bottom: 0;
+                transition: all ease .5s;
+
+            }
+
+        }
+        .cart {
+            margin-left: 20px;
+            .icon-cart {
+                width: 30px;
+                position: relative;
+                i {
+                    font-size: 16px;
+                }
+                .quantity-cart {
+                    position: absolute;
+                    top: 10%;
+                    right: -15%;
+                    text-align: center;
+                    border-radius: 50%;
+                    background-color: $main-color;
+                    color: $text-color-white;
+                    width: 18px;
+                    height: 18px;
+                    line-height: 18px;
+                    font-size: 13px;
+                }
+            }
+            
+        }
+    }
+    
+}
+
+//======= BANNER SECTION =======//
+.banner {
+    width: 100%;
+    height: 600px;
+    .bg-banner {
+        position: relative;
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+        .bg-heading {
+            position: absolute;
+            top: 45%;
+            left: 10%;
+            // transform: translateY(-50%);
+            h1 {
+                color: $text-color-white;
+                font-size: 150px;
+                line-height: 130px;
+                letter-spacing: 1px;
+            }
+            p {
+                background-color: rgba(192, 192, 192, 0.3);
+
+                color: $text-color-white;
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+}
