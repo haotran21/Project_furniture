@@ -1,0 +1,170 @@
+.products{
+    margin-bottom: 50px;
+    text-align: center;
+    .title{
+        margin: 50px 0;
+        h4{
+            font-weight: 100;
+            color: $gray-color3;
+            font-size: 18px;
+        }
+        h2{
+            color: $gray-color;
+            font-size: 35px;
+            font-weight: 600;
+            padding: 0px 0 20px 0; 
+        }
+        p{
+            color: $gray-color;
+            line-height: 25px;
+        }
+    }
+    .products__list{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        .product__item{
+            width: 380px;
+            height: 470px;
+            cursor: pointer;
+            overflow: hidden;
+            cursor: progress;
+            &:hover h5{
+                    color: $gray-color2;
+            }
+            .img__pro{
+                height: 80%;
+                width: 100%;
+                position: relative;
+                box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+                &:hover .overlay{
+                    // display: block; 
+                    visibility: visible; 
+                    animation: fadeHover 0.3s;
+                }
+                
+                .overlay{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    // display: none;
+                    visibility: hidden;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap:10px;
+                    background-color: rgba(110, 107, 107, 0.5);
+
+                    button{
+                        padding: 15px;
+                        background-color: $gray-color1;
+                        border: none;
+                        border-radius: 10px;
+                        &:hover{
+                            background-color: $gray-color4;
+                           i{
+                            color: $gray-color1;
+                           }
+                        }
+                        i{
+                            font-size: 18px;
+                            color: $text-color-white;
+                        }
+                    }
+                }
+                img{
+                    max-width: 100%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .title_pro{
+                font-size: 17px;
+                padding: 20px 0;
+                margin-bottom: 20px;
+                
+                h5{
+                    margin-bottom: 10px;
+                }
+                span{
+                    color: $gray-color1;
+                }
+            }
+           }
+           
+        }
+}
+.contact{
+    .content{
+        background-image: url('/img/bg-contact.jpg');
+        background-size:100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height:500px;
+        background-position:center;
+        background-attachment: fixed;
+        .nocontent{
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1{
+                font-size: 40px;
+                color: $gray-color4;
+
+            }
+            p{
+                margin: 20px 0 40px 0;
+                color: $gray-color4;
+            }
+            .form{
+                display: flex;
+                gap: 0 15px;
+                input{
+                    outline: none;
+                    border: none;
+                    width: 345px;
+                    height: 54px;
+                    font-size: 20px;
+                    padding-left: 15px;
+
+                }
+                button {
+                    outline: none;
+                    border: none;
+                    width: 345px;
+                    height: 54px;
+                    font-size: 20px;
+                    background-color: $gray-color1;
+                    color: $text-color-white;
+                    font-weight: 600;
+                };
+            }
+        }
+    }
+}
+
+    
+
+
+
+
+
+
+
+
+    @keyframes fadeHover {
+        0%{
+            opacity:0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
