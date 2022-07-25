@@ -24,13 +24,36 @@
         grid-template-columns: auto auto auto;
         justify-content: space-between;
         .product__item{
+            position: relative;
             width: 380px;
             height: 470px;
             cursor: pointer;
-            overflow: hidden;
+            // overflow: hidden;
             cursor: progress;
             &:hover h5{
                     color: $gray-color2;
+            }
+            .pro__new{
+                position: absolute;
+                top: 0;
+                left: -10px;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                background-color: $main-color;
+                z-index: 99;
+                p{
+                    color: $text-color-white;
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    top: 50px;
+                    left: 0px;
+                    border-left: 10px solid transparent;
+                    border-top: 10px solid $main-color;
+                    filter: brightness(70%);
+                }
             }
             .img__pro{
                 height: 80%;

@@ -1,0 +1,78 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "name": "HAUTEVILLE CONCRETE ROCKING CHAIR",
+            "price": "$100",
+            "img": "../img/product-1.jpg",
+            "status": true
+        },
+        {
+            "id": 2,
+            "name": "PAVILION SPEAKER",
+            "price": "$1200",
+            "img": "../img/product-2.jpg",
+            "status" : true
+        },
+        {
+            "id": 3,
+            "name": "LIGOMANCER",
+            "price": "$1200",
+            "img": "../img/product-3.jpg",
+            "status" : false
+
+        },
+        {
+            "id": 4,
+            "name": "ALATO CABINET",
+            "price": "$1100",
+            "img": "../img/product-4.jpg",
+            "status" : false
+
+        },
+        {
+            "id": 5,
+            "name": "EARING WIRELESS",
+            "price": "$4100",
+            "img": "../img/product-5.jpg",
+            "status" : false
+
+        },
+        {
+            "id": 6,
+            "name": "SCULPTURAL COFFEE TABLE",
+            "price": "$1100",
+            "img": "../img/product-6.jpg",
+            "status" : false
+
+
+        },
+        {
+            "id": 7,
+            "name": "THE WW CHAIR",
+            "price": "$700",
+            "img": "../img/product-7.jpg",
+            "status" : false
+
+
+        },
+        {
+            "id": 8,
+            "name": "HIMITSU MONEY BOX",
+            "price": "$1100",
+            "img": "../img/product-8.jpg",
+            "status" : false
+
+
+        },
+        {
+            "id": 9,
+            "name": "ARIANE PRIN",
+            "price": "$1100",
+            "img": "../img/product-9.jpg",
+            "status" : false
+
+        }
+    ]
+
+}
