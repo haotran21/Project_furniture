@@ -257,6 +257,7 @@ ul {
   padding-left: 15px;
 }
 .contact .content .nocontent .form button {
+  cursor: pointer;
   outline: none;
   border: none;
   width: 345px;
@@ -265,6 +266,10 @@ ul {
   background-color: #7d98a1;
   color: #FFFFFF;
   font-weight: 600;
+}
+.contact .content .nocontent .form button:hover {
+  background-color: #5e6572;
+  transition: all ease 0.3s;
 }
 
 @-webkit-keyframes fadeHover {

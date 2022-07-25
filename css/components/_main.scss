@@ -128,23 +128,20 @@
                 display: flex;
                 gap: 0 15px;
                 input{
-                    outline: none;
-                    border: none;
-                    width: 345px;
-                    height: 54px;
-                    font-size: 20px;
+                    @include button;
                     padding-left: 15px;
 
                 }
                 button {
-                    outline: none;
-                    border: none;
-                    width: 345px;
-                    height: 54px;
-                    font-size: 20px;
+                    cursor: pointer;
+                    @include button;
                     background-color: $gray-color1;
                     color: $text-color-white;
                     font-weight: 600;
+                    &:hover {
+                        background-color: #5e6572;
+                        transition: all ease .3s;
+                    }
                 };
             }
         }
