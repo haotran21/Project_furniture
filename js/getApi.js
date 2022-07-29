@@ -11,14 +11,14 @@ const getApi = async () => {
     }
     
 } 
-`header ${ isLargeScreen() ? '' :
-  `icon-${item.isCollapsed ? 'expander' : 'collapser'}` }`
 getApi ()
     .then((data) => {
         const htmls = data.map(product => {
             return `
             <div class="product__item">
-        
+            ${product.status ? `<div class="pro__new">
+            <p>NEW</p>
+            </div>` : ``} 
                 <div class="img__pro">
                 <img src="${product.img}" alt="">
                 <!-- overlayer  -->
@@ -31,12 +31,18 @@ getApi ()
                 <h5>${product.name}</h5>
                 <span>${product.price}</span>
             </div>
-        </div> 
-                
-            
-                 
-        `
+        </div>`;
         }) 
+        
         const listProduct = document.querySelector('.products__list')
+        console.log(listProduct)
         listProduct.innerHTML = htmls.join('')
     })
+
+
+const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+  });
+  // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+  let value = params.id_pro; // "some_value"
+  console.log(value)
