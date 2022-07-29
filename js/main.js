@@ -19,6 +19,29 @@ function start() {
         search.style.width =  205 - 150 +"px";
         search.style.borderBottom = "none"
     });
+    
+    let nCount = selector => {
+        $(selector).each(function () {
+            $(this).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: "swing",
+                step: function (value) {
+                    $(this).text(Math.ceil(value))
+                }
+            })
+        })
+    }
+
+    let position = 0;
+    $(window).scroll(function () {
+    let oTop = $('.numbers').offset().top - window.innerHeight;
+    if(position == 0 && $(window).scrollTop() >= oTop) {
+        position++;
+        nCount(".bn-box > h2");
+    }
+})
 }
 
 start();

@@ -83,6 +83,35 @@
     </header>
 
     <main>
+        <section id="feature" class="container">
+            <div class="fe-box">
+                <div class="icon">
+                    <i class="far fa-credit-card"></i>
+                </div>
+                <h3>CREDIT CARD</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+                <button class="normal">LEARN MORE</button>
+            </div>
+
+            <div class="fe-box">
+                <div class="icon">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <h3>SAVE MONEY</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+                <button class="normal">LEARN MORE</button>
+            </div>
+
+            <div class="fe-box">
+                <div class="icon">
+                    <i class="fab fa-telegram-plane"></i>
+                </div>
+                <h3>FREE DELIVERY</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+                <button class="normal">LEARN MORE</button>
+            </div>
+        </section>
+
         <section class="products container">
             <!-- title -->
             <div class="title">
@@ -94,6 +123,92 @@
                 
             </div>
         </section>
+
+        <!-- HAPPY CLIENT  -->
+        <section id="client">
+            <h4>TESTIMONY</h4>
+            <h2>HAPPY CLIENTS</h2>
+            <ul id="sliderUser" class="cs-hidden">
+                <li class="item-a">
+                    <div class="cli-box container">
+                        <div class="content">
+                            <img src="../img/Person/person1.jpg" alt="">
+                        <h3>JANE DOE, VIA <span>TWITTER</span></h3>
+                        <div class="quoest">
+                            <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur 
+                                tempore ab adipisci, temporibus, accusantium dolore non in quo voluptatem 
+                                necessitatibus nihil molestiae? Vitae, 
+                                laborum asperiores aspernatur reiciendis assumenda architecto eaque!"</p>
+                        </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-b">
+                    <div class="cli-box container">
+                        <div class="content">
+                            <img src="../img/Person/person1.jpg" alt="">
+                        <h3>JANE DOE, VIA <span>TWITTER</span></h3>
+                        <div class="quoest">
+                            <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur 
+                                tempore ab adipisci, temporibus, accusantium dolore non in quo voluptatem 
+                                necessitatibus nihil molestiae? Vitae, 
+                                laborum asperiores aspernatur reiciendis assumenda architecto eaque!"</p>
+                        </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-c">
+                    <div class="cli-box container">
+                        <div class="content">
+                            <img src="../img/Person/person1.jpg" alt="">
+                        <h3>JANE DOE, VIA <span>TWITTER</span></h3>
+                        <div class="quoest">
+                            <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur 
+                                tempore ab adipisci, temporibus, accusantium dolore non in quo voluptatem 
+                                necessitatibus nihil molestiae? Vitae, 
+                                laborum asperiores aspernatur reiciendis assumenda architecto eaque!"</p>
+                        </div>
+                        </div>
+                    </div>
+                </li>
+              </ul>
+        </section>
+
+        <!-- BANNER 2  -->
+        <section id="banner2">
+            <!-- container  -->
+            <div class="container numbers">
+                <div class="bn-box">
+                    <div class="icon">
+                        <i class="far fa-eye"></i>
+                    </div>
+                    <h2>22070</h2>
+                    <h3>CREATIVITY FUEL</h3>
+                </div>
+                <div class="bn-box">
+                    <div class="icon">
+                        <i class="far fa-eye"></i>
+                    </div>
+                    <h2>450</h2>
+                    <h3>HAPPY CLIENT</h3>
+                </div>
+                <div class="bn-box">
+                    <div class="icon">
+                        <i class="far fa-eye"></i>
+                    </div>
+                    <h2>700</h2>
+                    <h3>ALL PRODUCTS</h3>
+                </div>
+                <div class="bn-box">
+                    <div class="icon">
+                        <i class="far fa-eye"></i>
+                    </div>
+                    <h2>5605</h2>
+                    <h3>HOURS SPENT</h3>
+                </div>
+            </div>
+        </section>
+
         <section class="contact " >
             <div class="content">
                 <div class="nocontent">
@@ -107,6 +222,7 @@
             </div>
             
         </section>
+        
         
     </main>
 
@@ -156,7 +272,16 @@
     <script src="../js/main.js"></script>
     <script>
         $(document).ready(function() {
-    $('#adaptive').lightSlider({
+            $('#adaptive').lightSlider({
+            adaptiveHeight:true,
+            item:1,
+            slideMargin:0,
+            loop:true
+    });
+});
+
+$(document).ready(function() {
+    $('#sliderUser').lightSlider({
         adaptiveHeight:true,
         item:1,
         slideMargin:0,

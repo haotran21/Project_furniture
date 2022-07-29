@@ -76,7 +76,9 @@
     margin: 10px 0 0;
     padding: 0;
     text-align: center;
-	display: none;
+
+    /* Ẩn icon chấm  */
+	/* display: none; */
 	
 }
 .lSSlideOuter .lSPager.lSpg > li {
@@ -164,6 +166,9 @@
     opacity: 0.5;
     -webkit-transition: opacity 0.35s linear 0s;
     transition: opacity 0.35s linear 0s;
+
+    /* Ẩn icon mũi tên  */
+    display: none;
 }
 .lSAction > a:hover {
     opacity: 1;
